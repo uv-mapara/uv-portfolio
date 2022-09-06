@@ -48,26 +48,27 @@
                 <span>E</span>
                 <span>S</span>
                 <span>H</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">          
+            </a>        
+            <label for="label-bars" class="navbar-toggler BtnBars" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">          
               <span class=""></span>
               <span class=""></span>
               <span class=""></span>
-            </button>
+              <input type="checkbox" id="label-bars" class="navbar-toggler collapsed ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="display: none;font-size: 40px;width: 30px;height: 58px;">
+            </label>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto text-center">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#mypage">Home</a>
+                  <a class="nav-link hompage" href="#mypage">Home</a>
                 </li>            
                 <li class="nav-item active">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link Aboutpage" href="#about">About</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#skill">Skills</a>
+                  <a class="nav-link Skillspage" href="#skill">Skills</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link Contactpage" href="#contact">Contact</a>
                 </li>                       
               </ul>        
             </div>
@@ -110,25 +111,14 @@
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1200" class="col-md-6 col-xs-12 p-3">
-                <h3 style="-webkit-mask-image: radial-gradient(black, transparent);">About Me</h3>
-                <p class="mt-3">Hello, I’m  Uvesh, web-developer based in Ahmedabad. I have rich experience in web site design & building and customization. Also I am good at</p>
-                <ul>
-                    <li><span>HTML</span></li>
-                    <li><span>CSS</span></li>
-                    <li><span>BOOTSTRAP</span></li>
-                    <li><span>JAVASCRIPT</span></li>
-                    <li><span>JQUERY</span></li>
-                    <li><span>REACT</span></li>
-                    <li><span>PYTHON</span></li>
-                    <li><span>DJANGO</span></li>
-                    <li><span>MONGO-DB</span></li>
-                </ul>
+                <h3>About Me</h3>
+                <p class="mt-3">Hello, I’m  Uvesh, web-developer based in Ahmedabad. I have rich experience in web site design & building and customization. Also I am good at</p>                
                 <a id="DownloadCV" download><button id="BtnCV" class="CV mt-3"><i class="fa fa-download mr-3"></i>Download CV</button></a>
             </div>
         </div>
         <div class="row mt-5">
             <div data-aos="fade-up" data-aos-duration="1200" class="col-12 mb-2 mt-2">
-                <h1 class="text-center" style="-webkit-mask-image: radial-gradient(black, transparent);">What I do</h1>
+                <h1 class="text-center">What I do</h1>
             </div>
             <div data-aos="fade-up" data-aos-duration="1200" class="col-md-4 col-xs-12">
                 <div class="ui">
@@ -167,7 +157,7 @@
     <div class="container mt-2 mb-5 Skills text-light">
         <div class="row">        
             <div data-aos="fade-up" data-aos-duration="1200" class="col-md-12 col-xs-12">
-                <h1 class="text-center mb-5" style="-webkit-mask-image: radial-gradient(black, transparent);">Technical Skills</h1>
+                <h1 class="text-center mb-5">Technical Skills</h1>
                 <label>HTML</label>
                 <div class="progress">                    
                     <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
@@ -208,7 +198,7 @@
     <div class="container mt-5 contact text-light" id="contact">
         <div class="row">
            <div data-aos="fade-up" data-aos-duration="1200" class="col-md-12">
-                <h1 class="text-center wow bounceInUp" style="-webkit-mask-image: radial-gradient(black, transparent);">Contact</h1>             
+                <h1 class="text-center wow bounceInUp">Contact</h1>             
            </div>
            <div class="col-md-12 col-xs-12">
             <div id="DivDisplayMsg" style="display: none;">
@@ -261,6 +251,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/index.js"></script>        
     <script>
         AOS.init();

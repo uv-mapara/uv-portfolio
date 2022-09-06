@@ -208,14 +208,18 @@ function SaveData() {
     }
 
     else{      
-        $.blockUI({
-            // message: `<h1><img src="static/images/loading-spinner-grey.gif" /> Please Wait...</h1>`,
-            message: `<h1><img src="images/spinner2.gif" class="img-fluid" /></h1>`,            
-       }); 
-       setTimeout($.unblockUI, 1000);
+    //     $.blockUI({
+    //         // message: `<h1><img src="static/images/loading-spinner-grey.gif" /> Please Wait...</h1>`,
+    //         message: `<h1><img src="images/spinner2.gif" class="img-fluid" /></h1>`,            
+    //    }); 
+    //    setTimeout($.unblockUI, 1000);
+    swal({
+        icon: "success",
+        text: "Sent Successfully.",
+      });       
        HideMessage("DivDisplayMsg");
-       HideToastrMsg();
-       ShowToastrMsg("Success", "toast-top-full-width", "Sent SuccessFully.", 3000); 
+    //    HideToastrMsg();
+    //    ShowToastrMsg("Success", "toast-top-full-width", "Sent SuccessFully.", 3000); 
         $('#firstname').val('');
         $('#lastname').val('');
         $('#email').val('');
@@ -298,4 +302,36 @@ btn.on('click', function(e) {
 });
 
 /* END BACK TO TOP */
+
+/* START NAVBAR MENU */
+$('.navbar-toggler').click(function(){
+    if( $('#label-bars').is(':checked') ){
+        $('html').addClass('unscrollHtml')
+        $('.navbar-collapse').addClass('show')                
+    }    
+    else{
+        $('html').removeClass('unscrollHtml')
+    }
+    $('.hompage').click(function(){
+        // window.location.href = "#mypage"; 
+        $('html').removeClass('unscrollHtml')
+        $('.navbar-collapse').removeClass('show') 
+    })
+    $('.Aboutpage').click(function(){
+        // window.location.href = "#mypage"; 
+        $('html').removeClass('unscrollHtml') 
+        $('.navbar-collapse').removeClass('show')
+    })
+    $('.Skillspage').click(function(){
+        // window.location.href = "#mypage"; 
+        $('html').removeClass('unscrollHtml') 
+        $('.navbar-collapse').removeClass('show')
+    })
+    $('.Contactpage').click(function(){
+        // window.location.href = "#mypage"; 
+        $('html').removeClass('unscrollHtml') 
+        $('.navbar-collapse').removeClass('show')
+    })
+})
+/* END NAVBAR MENU */
 

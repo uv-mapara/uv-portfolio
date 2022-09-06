@@ -491,10 +491,8 @@ nav  a {
 /* START CONTACT */
 .contact{
     margin-top: 5rem !important;
+    overflow-y:hidden;
 }
-.contact h1{
-    opacity:0.8;
- }
 .InputForm{
     height: 50px;
     outline:none !important;
@@ -588,6 +586,10 @@ iframe{
 #backbutton.show {
     opacity: 1;
     visibility: visible;
+}
+.unscrollHtml{
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 /*  END BACK TO TOP BUTTON */
